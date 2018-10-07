@@ -28,7 +28,7 @@ f_corr = open( txt_corrupt, "w" )
 for image_name in os.listdir(path_images):
     # check vertical/horizontal
     try:
-        ima = cafe.io.load_image(os.path.join(path_images, image_name))
+        ima = caffe.io.load_image(os.path.join(path_images, image_name))
 
         # check panorama/portrait
         if ima.shape[0] > ima.shape[1]:
