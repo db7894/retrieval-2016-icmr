@@ -24,7 +24,7 @@
 	"input_size":[2 ,3, 336, 256],
 	"dim_input":"336_256",
 	"dim_maps":[21,16],
-	"path_output":"/media/eva/Eva Data/icmr_results/oxford",
+	"path_output":"/home/mirlab/Desktop/Benchmarks_Daniel/retrieval-2016-icmr/icmr_results/oxford",
 	"path_models":"/media/eva/Eva Data/icmr_results/paris",
 	"dataset":"oxford"
 }
