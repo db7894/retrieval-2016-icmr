@@ -325,7 +325,8 @@ def extract_features( fx, key_frames, storer ):
 
 if __name__ == "__main__":
     # oxford dataset
-    settings = load_settings("/home/eva/Workspace/icmr_pipeline/oxford/settings.json")
+    settings = load_settings("/home/mirlab/Desktop/Benchmarks_Daniel/retrieval-2016-icmr/oxford/settings.json")
+    # pathDB = '/home/mirlab/Desktop/Benchmarks_Daniel/retrieval-2016-icmr/bow_pipeline/models/vgg_16/'
 
     # oxford105k subset dataset
     #settings = load_settings("/home/eva/Workspace/icmr_pipeline/oxford105k/settings.json")

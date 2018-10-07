@@ -6,8 +6,8 @@ import os
 
 
 
-#path_db = "/media/eva/Eva Data/icmr_results/oxford105k/features/vgg16/1024_768/pool5_db"
-#path_settings = "/home/eva/Workspace/icmr_pipeline/oxford105k/settings.json"
+path_db = "/home/mirlab/Desktop/Benchmarks_Daniel/retrieval-2016-icmr/bow_pipeline/models/vgg_16/pool5_db"
+path_settings = "/home/mirlab/Desktop/Benchmarks_Daniel/retrieval-2016-icmr/oxford/settings.json"
 
 
 def load_settings( filename ):
