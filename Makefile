@@ -13,12 +13,12 @@ bowA:
 
 .PHONY: bowB
 bowB:
-	python ./bow_pipelineB_preprocessing_clustering.py
+	python ./bow_pipeline/B_preprocessing_clustering.py
 
 .PHONY: bowC
 bowC:
-	python ./bow_pipelineC_bow_representation.py
+	python ./bow_pipeline/C_bow_representation.py
 
 .PHONY: bowD
 bowD:
-	python ./bow_pipelineD_rankings_BoW.py
+	python ./bow_pipeline/D_rankings_BoW.py
