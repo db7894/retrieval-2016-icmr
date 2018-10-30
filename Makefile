@@ -7,9 +7,18 @@ setup:
 	echo "source activate py2"
 	echo "export PYTHONPATH=\"${PYTHONPATH}\""
 
-.PHONY: bow
-bow:
+.PHONY: bowA
+bowA:
 	python ./bow_pipeline/A_feature_extraction.py
+
+.PHONY: bowB
+bowB:
 	python ./bow_pipelineB_preprocessing_clustering.py
+
+.PHONY: bowC
+bowC:
 	python ./bow_pipelineC_bow_representation.py
+
+.PHONY: bowD
+bowD:
 	python ./bow_pipelineD_rankings_BoW.py
