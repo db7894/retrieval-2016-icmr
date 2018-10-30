@@ -1,6 +1,6 @@
 .PHONY: bow
 bow:
-	python2 ./bow_pipeline/A_feature_extraction.py
-	python2 ./bow_pipelineB_preprocessing_clustering.py
-	python2 ./bow_pipelineC_bow_representation.py
-	python2 ./bow_pipelineD_rankings_BoW.py
+	python ./bow_pipeline/A_feature_extraction.py
+	python ./bow_pipelineB_preprocessing_clustering.py
+	python ./bow_pipelineC_bow_representation.py
+	python ./bow_pipelineD_rankings_BoW.py
