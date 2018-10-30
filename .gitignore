@@ -6,3 +6,4 @@
 *.npy
 notebooks/
 bow_pipeline/new_features
+icmr_results/
