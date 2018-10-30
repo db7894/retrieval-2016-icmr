@@ -101,12 +101,12 @@ pca_dim=512
 Paths
 '''
 # oxford
-#settings=load_settings("/home/eva/Workspace/icmr_pipeline/oxford/settings.json")
+settings=load_settings("/home/mirlab/Desktop/Benchmarks_Daniel/retrieval-2016-icmr/oxford/settings.json")
 #settings=load_settings("/home/eva/Workspace/icmr_pipeline/oxford105k/settings.json")
 
 
 # paris
-settings = load_settings("/home/eva/Workspace/icmr_pipeline/paris/settings.json")
+# settings = load_settings("/home/mirlab/Desktop/Benchmarks_Daniel/retrieval-2016-icmr/oxford/settings.json")
 
 #trecvid
 #settings = load_settings("/home/eva/Workspace/icmr_pipeline/trecvid_subset/settings.json")
@@ -120,7 +120,7 @@ dim_input="336_256" # normal oxford
 network="vgg16"
 path_output=str(settings["path_output"])
 pathDB=os.path.join(path_output,'features',network, dim_input)
-list_layers=[ 'conv5_1' ]
+list_layers=[ 'pool5' ]
 
 pca_model_name =os.path.join(path_output, 'pca',network, dim_input, '---.pkl')
 #pca_model_name=None

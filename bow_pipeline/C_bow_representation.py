@@ -101,7 +101,7 @@ if __name__=="__main__":
     Paths
     '''
     # oxford
-    settings=load_settings("/home/eva/Workspace/icmr_pipeline/oxford/settings.json")
+    settings=load_settings("/home/mirlab/Desktop/Benchmarks_Daniel/retrieval-2016-icmr/oxford/settings.json")
 
     # oxford105K
     #settings=load_settings("/home/eva/Workspace/icmr_pipeline/oxford105k/settings.json")

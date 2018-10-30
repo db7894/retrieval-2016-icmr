@@ -7,6 +7,7 @@ from utils import *
 from sklearn.preprocessing import normalize
 from check_computed import *
 
+caffe.set_mode_cpu()
 log= set_logger("Feature_Extraction", level_logger="info", format_logger="%(asctime)s- %(name)s - %(levelname)s - %(message)s")
 
 class Local_Extractor(caffe.Net):
@@ -332,7 +333,7 @@ if __name__ == "__main__":
     #settings = load_settings("/home/eva/Workspace/icmr_pipeline/oxford105k/settings.json")
 
     # paris dataset
-    #settings = load_settings("/home/eva/Workspace/icmr_pipeline/paris/settings.json")
+    #settings = load_settings("/home/eva/Workspace/icmr_per )
 
     # paris106k dataset
     #settings = load_settings("/home/eva/Workspace/icmr_pipeline/paris106k/settings.json")
@@ -355,7 +356,8 @@ if __name__ == "__main__":
     fx = Local_Extractor.from_settings(settings)
 
     # Process Vertical
-    #keyframes = load_paths_txt( settings["keyframesVertical"] )
+    # keyframes = load_paths_txt( settings["keyframesVertical"] )
+    # print "keyframes: " + str(keyframes)
     extract_features( fx, keyframes[labels==True], storer )
     # Process Horitzontal
     dim = fx.input_shape
@@ -364,5 +366,5 @@ if __name__ == "__main__":
     keyframes = load_paths_txt( settings["keyframesHoritzontal"] )
 
 
-    #extract_features(fx, keyframes, storer)
-    extract_features( fx, keyframes[labels==False], storer )
+    extract_features(fx, keyframes, storer)
+    # extract_features( fx, keyframes[labels==False], storer )
